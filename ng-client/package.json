@@ -8,7 +8,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "description": "Angular, Angular Material, RxJS, Generic Services",
+  "author": "Netherium",
   "private": false,
+  "license": "MIT",
   "dependencies": {
     "@angular/animations": "~13.2.0",
     "@angular/cdk": "^13.2.1",
