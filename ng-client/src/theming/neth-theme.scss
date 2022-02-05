@@ -1,0 +1,42 @@
+@use '@angular/material' as mat;
+@import '@angular/material/theming';
+@import 'custom-scrollbar';
+@import 'mat-label-toggle';
+
+@include mat.core();
+
+$primary: mat.define-palette(mat.$deep-purple-palette);
+$accent: mat.define-palette(mat.$pink-palette);
+$warn: mat.define-palette(mat.$red-palette);
+
+/**
+Definition of light-theme
+ */
+$neth-light-theme: mat.define-light-theme((
+  color: (
+    primary: $primary,
+    accent: $accent,
+    warn: $warn,
+  )
+));
+@include mat.all-component-themes($neth-light-theme);
+@include mat-label-toggle-theme($neth-light-theme);
+@include custom-scrollbar-theme($neth-light-theme);
+
+
+/**
+Definition of dark-theme
+https://github.com/angular/components/blob/master/guides/duplicate-theming-styles.md
+ */
+$neth-dark-theme: mat.define-dark-theme((
+  color: (
+    primary: $primary,
+    accent: $accent,
+    warn: $warn,
+  )
+));
+.dark-theme {
+  @include mat.all-component-colors($neth-dark-theme);
+  @include mat-label-toggle-color($neth-dark-theme);
+  @include custom-scrollbar-color($neth-dark-theme);
+}
