@@ -2,9 +2,8 @@
 
 A prototype login system written in NestJS and Angular
 
-## Features
 
-___
+## Features
 
 ### Server (NestJS)
 
@@ -26,9 +25,8 @@ ___
 - AuthGuards
 - Basic components/services testing
 
-## Quick Start
 
-___
+## Quick Start
 
 ### Checkout Repo
 
@@ -49,6 +47,7 @@ ___
 - Install dependencies `npm install`
 - Start the client `npm run start`
 - Browse to http://localhost:4200, to view the app
+
 
 ## Run Test Suites
 
