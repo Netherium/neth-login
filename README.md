@@ -54,6 +54,7 @@ A prototype login system written in NestJS and Angular
 ### Server
 
 - Navigate to folder `cd ./nestjs-server`
+- Copy `.env.sample` to `.env.test`
 - Start E2E testsuite `npm run test:e2e`
 
 ### Client
