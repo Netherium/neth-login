@@ -2,6 +2,7 @@
 
 A prototype login system written in NestJS and Angular
 
+<div align="center">Made with ❤ by Netherium</div>
 
 ## Features
 
@@ -31,6 +32,7 @@ A prototype login system written in NestJS and Angular
 ### Checkout Repo
 
 - `git clone https://github.com/Netherium/neth-login.git`
+- Navigate to project folder `cd ./neth-login`
 
 ### Start Server
 
@@ -61,5 +63,3 @@ A prototype login system written in NestJS and Angular
 
 - Navigate to folder `cd ./ng-client`
 - Start testsuite `npm run test`
-
-Made with ❤ by Netherium
