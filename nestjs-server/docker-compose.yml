@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  pgsql141:
+    image: postgres:14.1-alpine
+    restart: unless-stopped
+    container_name: nestjs-pgsql141
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: nestjs_login
+    volumes:
+      - ./data/pgsql14-data:/var/lib/postgresql/data
+
+  redis626:
+    image: redis:6.2.6-alpine
+    container_name: nestjs-redis626
+    command: redis-server --requirepass root --appendonly yes
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./data/redis62-data:/data
